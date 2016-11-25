@@ -1,7 +1,7 @@
-@AccountsListPage @ST_496207666
+@ST_4534 @AccountsListPage
 Feature: Accounts list page
 
-@REL-696 @SC_480197148
+@SC_29901 @REL-696
 Scenario: Check submitting form without completing all mandatory fields
 Given I am in page "Default"
 And I am signed in
@@ -13,7 +13,7 @@ And I see a notification message "Field is required" under "3" required fields o
 And I click button 'Cancel' for new credential
 And I see account is not in the table 'Credentials'
 
-@REL-702 @SC_468241394
+@SC_29902 @REL-702
 Scenario: Check that account can be added at TTS block
 Given I am in page "Default"
 And I am signed in
@@ -32,7 +32,7 @@ When I navigate to page 'Profile'
 Then I see my account in table 'Credentials'
 And I click button 'Delete' for created account in panel 'Credentials' in page 'User Profile'
 
-@REL-703 @SC_538278563
+@SC_29903 @REL-703
 Scenario: Check that added account can be canceled at TTS block
 Given I am in page "Default"
 And I am signed in
@@ -47,7 +47,7 @@ Then I see pop up "Add account" was closed
 When I navigate to page 'Profile'
 And I see account is not in the table 'Credentials'
 
-@REL-704 @SC_483659064
+@SC_29904 @REL-704
 Scenario: Check that account can be added at VCS block
 Given I am in page "Default"
 And I am signed in
@@ -66,7 +66,7 @@ When I navigate to page 'Profile'
 Then I see my account in table 'Credentials'
 And I click button 'Delete' for created account in panel 'Credentials' in page 'User Profile'
 
-@REL-705 @SC_532045693
+@SC_29905 @REL-705
 Scenario: Check that added account can be canceled at VCS block
 Given I am in page "Default"
 And I am signed in
@@ -81,7 +81,7 @@ Then I see pop up "Add account" was closed
 When I navigate to page 'Profile'
 And I see account is not in the table 'Credentials'
 
-@REL-798 @ignore @SC_518337615
+@SC_29906 @REL-798 @ignore
 Scenario: Check pagination panel for accounts
 Given I am in page "Default"
 And I am signed in
@@ -96,4 +96,3 @@ When I click on button ">" on pagination panel
 Then I am on the "last" page on pagination panel
 When I click on button "<" on pagination panel
 Then I am on the "1" page on pagination panel
-

@@ -1,4 +1,4 @@
-@GitEditorPage @ST_507690698
+@ST_4529 @GitEditorPage
 Feature: Git editor page
 
 Background: 
@@ -30,7 +30,7 @@ And I click on button "Add" on pop-up "ADD GIT REPOSITORY PATH"
 Then I see that "Git" is added to setting 'Version control system' in page 'Project settings'
 When I selected menu "default" in dropdown 'Account' at block VCS
 
-@REL-779 @SC_548157043
+@SC_29882 @REL-779
 Scenario: Load project from Git
 Given I am in page "Editor"
 When I click icon 'Update from Git' in panel 'Features'
@@ -38,7 +38,7 @@ Then I see success notification ""
 And I read folder structure from Editor page
 And I check that GitHub and ReLime trees are the same
 
-@REL-780 @SC_505477833
+@SC_29883 @REL-780
 Scenario: Reload project from Git
 Given I am in page "Editor"
 When I click icon 'Update from Git' in panel 'Features'
@@ -53,7 +53,7 @@ And I can see IDs is changed in ng-ispector
 And I read folder structure from Editor page
 And I check that GitHub and ReLime trees are the same
 
-@REL-788 @SC_469479501
+@SC_29884 @REL-788
 Scenario: Load and update project on Editor page
 Given I am in page "Editor"
 When I click icon 'Update from Git' in panel 'Features'
@@ -62,7 +62,7 @@ And I am in page "Feature Management"
 And I click button 'Save changes to Git' in page 'Feature Management'
 Then I see success notification ""
 
-@REL-775 @SC_546927306
+@SC_29885 @REL-775
 Scenario: Load and update project on Editor page
 Given I am in page "Editor"
 When I click icon 'Update from Git' in panel 'Features'
@@ -86,11 +86,10 @@ And I select "Search books by publication year" scenario in the table
 And I see scenario "Search books by publication year" is expanded
 And I can see that structures in scenario accordion for scenario "Search books by publication year" and Git file "[default]blob/master/src/test/resources/feature/book/search_book.feature" are the same
 
-@REL-786 @SC_477859724
+@SC_29886 @REL-786
 Scenario: Reload project without unique tags from Git via Editor page
 When I delete tags for scenarios and feature in Git file "[default]blob/master/src/test/resources/feature/book/search_book.feature"
 Given I am in page "Editor"
 When I click icon 'Update from Git' in panel 'Features'
 Then I see success notification ""
 And I see that tags are present for scenarios and feature in Git file "[default]blob/master/src/test/resources/feature/book/search_book.feature"
-

@@ -1,7 +1,7 @@
-@FeatureURL @ST_486080703
+@ST_4543 @FeatureURL
 Feature: Feature url
 
-@REL-759 @SC_542666950
+@SC_29929 @REL-759
 Scenario: Check story url
 Given I am in page "Default"
 And I am signed in
@@ -12,4 +12,3 @@ And I select feature "search_book" in the tree
 Then I see story "search_book" is selected in the tree
 Then I can see path matches RegEx "[default][A-Z,0-9]{3,4}/editor/ST_[a-z,A-Z,0-9]+\?hits=10&offset=0" in browser route
 Then I see story data under the tree
-

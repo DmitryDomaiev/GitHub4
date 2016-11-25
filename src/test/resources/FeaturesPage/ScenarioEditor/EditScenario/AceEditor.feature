@@ -1,7 +1,7 @@
-@AceEditor @ST_476170747
+@ST_4525 @AceEditor
 Feature: Ace Editor
 
-@REL-834 @SC_520891807
+@SC_29869 @REL-834
 Scenario: Autocomplete rules + highlight
   #autocomplete list should be displayed when required
   #select a word / a stepline from autocomplete list / keyword should present in each step, line break should be added befor each When
@@ -65,4 +65,3 @@ And I see that "9" line is marked as comment in Ace Editor in scenario accordion
 And I click button 'Enter'
 And I see that "10" line equals "comment" in Ace Editor in scenario accordion
 And I see that "10" line is marked as comment in Ace Editor in scenario accordion
-

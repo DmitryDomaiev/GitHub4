@@ -1,7 +1,7 @@
-@PaginationFunctionality @ST_493523315
+@ST_4520 @PaginationFunctionality
 Feature: Pagination Functionality
 
-@REL-837 @SC_535769971
+@SC_29860 @REL-837
 Scenario: Pagination functionality
     #pagination bar should not be displayed when scenario list has less than or exactly 10 scenarios
     #pagination bar should be displayed when scenario list has more than 10 scenarios
@@ -77,4 +77,3 @@ Then I see that the scenario "5" was successfully deleted
 And I see that 10 scenarios are displayed
 And I see that the scenario is collapsed
 And I see scenario "11" is displayed
-

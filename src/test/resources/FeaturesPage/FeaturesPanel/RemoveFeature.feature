@@ -1,7 +1,7 @@
-@RemoveFeature @ST_528038369
+@ST_4517 @RemoveFeature
 Feature: Remove feature
 
-@REL-449 @SC_539175439
+@SC_29845 @REL-449
 Scenario: Remove feature
 Given I am in page "Default"
 And I am signed in
@@ -24,4 +24,3 @@ And I select feature "fileName_1" in the tree
 When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete feature file"
 Then I see that the feature was successfully deleted
-
